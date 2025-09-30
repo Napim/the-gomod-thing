@@ -1,0 +1,44 @@
+{
+  "players": [
+    {
+      "name": "_checkered",
+      "uuid": "12a6476f-059c-4924-a56f-c4807433df62"
+    },
+    {
+      "name": "cjk500",
+      "uuid": "17f23144-5440-4d37-9598-ea466c2c150f"
+    },
+    {
+      "name": "Jurce",
+      "uuid": "be5bc621-1107-478f-8c93-e4d2975e4afa"
+    },
+    {
+      "name": "Technoblade",
+      "uuid": "b876ec32-e396-4b70-9b1b-6e9c4314c3ef"
+    },
+    {
+      "name": "Dream",
+      "uuid": "81951d8f-4b1e-4c0e-9c8a-5c8b5c8b5c8b"
+    },
+    {
+      "name": "GeorgeNotFound",
+      "uuid": "81951d8f-4b1e-4c0e-9c8a-5c8b5c8b5c8c"
+    },
+    {
+      "name": "Sapnap",
+      "uuid": "81951d8f-4b1e-4c0e-9c8a-5c8b5c8b5c8d"
+    },
+    {
+      "name": "TommyInnit",
+      "uuid": "81951d8f-4b1e-4c0e-9c8a-5c8b5c8b5c8e"
+    },
+    {
+      "name": "Tubbo",
+      "uuid": "81951d8f-4b1e-4c0e-9c8a-5c8b5c8b5c8f"
+    },
+    {
+      "name": "WilburSoot",
+      "uuid": "81951d8f-4b1e-4c0e-9c8a-5c8b5c8b5c90"
+    }
+  ]
+}

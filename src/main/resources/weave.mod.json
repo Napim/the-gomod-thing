@@ -1,0 +1,16 @@
+{
+  "mixinConfigs": [
+    "gomod.mixins.json"
+  ],
+  "hooks": [
+  ],
+  "entrypoints": [
+    "me.ballmc.gomod.Main"
+  ],
+  "about": {
+    "name": "gomod123",
+    "version": "1.0.0",
+    "author": "carlaus",
+    "description": "Unshuffles scrambled text in lobbies, like the player names in tab list and chat."
+  }
+}

@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"name": "gomod123",
+			"path": "."
+		},
+		{
+			"name": "InventoryHUD",
+			"path": "../../Desktop/InventoryHUD/InventoryHUD"
+		},
+		{
+			"name": "WeaveNoHitDelay",
+			"path": "../../Desktop/WeaveNoHitDelay"
+		}
+	],
+	"settings": {}
+}

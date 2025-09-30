@@ -1,0 +1,76 @@
+# Cursor Rules for BallMC AntiShuffle Mod
+
+## ⚠️ MANDATORY PRE-IMPLEMENTATION CHECKLIST ⚠️
+STOP! Before writing ANY code or suggesting ANY changes:
+
+1. Make sure what you're changing doesn't affect the other commands that we've created !! If absolutely need so, then tell me by saying "⚠️⚠️⚠️⚠️"
+2. All new commands must follow the established pattern: create a command class that extends `Command` and a feature class if needed
+3. Test for compatibility with WeaveLoader and Minecraft 1.8.9
+4. Always register new commands in `Main.java`'s `preInit()` method
+
+## 🏗️ Code Structure Standards
+
+### Command Classes
+- All command classes must:
+  - Extend `net.weavemc.loader.api.command.Command`
+  - Be placed in `me.ballmc.AntiShuffle.command` package
+  - Follow naming convention: `[Feature]Command.java`
+  - Implement the `handle(String[] args)` method
+  - Include proper documentation comments
+
+### Feature Classes
+- All feature classes must:
+  - Be placed in `me.ballmc.AntiShuffle.features` package
+  - Follow naming convention matching their command (e.g., `NoHitDelay.java` for `NoHitDelayCommand.java`)
+  - Include toggle functionality with appropriate status messages
+  - Use proper status messaging with consistent formatting
+
+### Mixins
+- Mixins must:
+  - Be placed in `me.ballmc.AntiShuffle.mixins` package
+  - Properly annotated with `@Mixin` targeting the correct Minecraft class
+  - Follow naming convention: `[MinecraftClassName]Mixin.java`
+  - Include proper documentation of what they're modifying
+
+## 💻 Coding Style
+
+### Messaging
+- All user messages must:
+  - Use consistent prefix: `EnumChatFormatting.GOLD + "[gomod] " + EnumChatFormatting.RESET`
+  - Use consistent color coding:
+    - Enabled features: `EnumChatFormatting.GREEN + "enabled"`
+    - Disabled features: `EnumChatFormatting.RED + "disabled"`
+    - General messages: `EnumChatFormatting.YELLOW`
+  - Use the `sendMessage` method for consistency
+
+### Command Handling
+- All commands should include:
+  - Proper argument validation
+  - Clear error messages when used incorrectly
+  - Help text when no arguments provided
+
+### Configuration
+- All configurable features must:
+  - Store configuration in ConfigManager
+  - Save/load configuration values between sessions
+  - Include default values
+
+## 🧪 Testing Requirements
+
+1. Test all commands with various inputs including edge cases
+2. Verify compatibility with Weave Loader
+3. Ensure no conflicts with other features
+4. Verify performance impact is minimal
+5. Test for memory leaks in long-running features
+
+## 🔄 Git Standards
+
+1. Each new feature/command should be a separate branch
+2. Commit messages should be descriptive and include feature name
+3. Include issue number in commit message if applicable
+
+## 📚 Documentation Requirements
+
+1. All code should be reasonably documented with comments
+2. Maintain a list of commands and features in README
+3. Update usage examples when adding new commands

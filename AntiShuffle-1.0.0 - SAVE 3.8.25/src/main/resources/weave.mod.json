@@ -1,0 +1,15 @@
+{
+  "mixinConfigs": [
+    "ballmc.mixins.json"
+  ],
+  "entrypoints": [
+    "me.ballmc.AntiShuffle.Main"
+  ],
+  "about": {
+    "name": "AntiShuffle",
+    "version": "1.0.0",
+    "author": "ballmc",
+    "description": "Unshuffles scrambled text in lobbies, like the player names in tab list and chat.",
+    "website": "https://github.com/ballmc/AntiShuffle"
+  }
+}
